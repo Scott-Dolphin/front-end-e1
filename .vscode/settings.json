@@ -1,0 +1,6 @@
+{
+    "files.autoSave": "afterDelay",
+    "editor.cursorStyle": "block-outline",
+    "workbench.activityBar.visible": true,
+    "workbench.sideBar.location": "right"
+}
