@@ -1,0 +1,169 @@
+body {
+    /* background-color:aliceblue; */
+    background-image: linear-gradient(to bottom right, blue, aliceblue);
+    margin-left: 170px;
+}
+
+h1 {
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+    background-color: cornflowerblue;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+h2 {
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+    border-radius: 25px;
+}
+
+h3 {
+    font-family:'Courier New', Courier, monospace;
+    font-style:italic;
+    margin-left: 50px;
+    border-radius: 25px;
+}
+
+p {
+    font-family:'Courier New', Courier, monospace;
+    margin-left: 50px;
+    padding: 20px;
+}
+a {
+    font-family:'Courier New', Courier, monospace;
+    /* margin-left: 100px; */
+    text-decoration:none;
+    
+}
+
+.home {
+    text-align:center;
+    padding: 15px;
+    background-color:cornflowerblue;
+    font-size:40px
+    
+}
+
+a .home {
+    display:block;
+    
+    
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+img {
+    margin-left: 50px;
+    padding:15px;
+}
+ul {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+ul.nav {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    background-color:cornflowerblue;
+    overflow: hidden;
+    font-size: 40px;
+    
+}
+
+li.nav {
+    margin-left: none;
+    float: left;
+    border-right: 2px solid white;
+}
+
+li a {
+    display:block;
+    color:white;
+    text-align:center;
+    text-decoration:none;
+    padding: 15px;
+
+}
+
+li:last-child {
+    border-right:none;
+}
+
+.border {
+    background-color: white;
+    padding:30px;
+    margin-left:15px;
+    border-radius:25px;
+}
+
+button {
+    font-family: 'Courier New', Courier, monospace;
+    border: none;
+    color: cornflowerblue;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+button:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+hr {
+    border-radius: 15px;
+    border:2px solid black;
+}
+
+.sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: mediumslateblue; /* Black */
+    overflow-x: hidden;
+    padding-top: 20px;
+    border-radius: 25px;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.ig {
+    font-family:'Courier New', Courier, monospace;
+    margin-left: 50px;
+    padding: 20px;
+}
+
+
+img.doge {
+    width: 500;
+}
+
+img.doge:hover {
+    animation-name: n;
+    animation-duration: 2s
+    
+}
