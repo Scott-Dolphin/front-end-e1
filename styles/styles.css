@@ -1,3 +1,11 @@
+img {
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
 body {
     /* background-color:aliceblue; */
     background-image: linear-gradient(to bottom right, blue, aliceblue);
@@ -6,49 +14,70 @@ body {
 
 h1 {
     text-align: center;
-    font-family:'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
     background-color: cornflowerblue;
     padding: 20px;
     border-radius: 25px;
+    animation-name: slideLeft;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+
+}
+@keyframes slideLeft {
+    from {
+        transform: translateX(-100px)
+    }
+    to {
+        transform: translateX(0);
+    }
 }
 
 h2 {
     text-align: center;
-    font-family:'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
     border-radius: 25px;
 }
 
 h3 {
-    font-family:'Courier New', Courier, monospace;
-    font-style:italic;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
     margin-left: 50px;
     border-radius: 25px;
 }
 
+@keyframes slideLeft {
+    from {
+        transform: translate(-2000px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
 p {
-    font-family:'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
     margin-left: 50px;
     padding: 20px;
 }
+
 a {
-    font-family:'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
     /* margin-left: 100px; */
-    text-decoration:none;
-    
+    text-decoration: none;
+
 }
 
 .home {
-    text-align:center;
+    text-align: center;
     padding: 15px;
-    background-color:cornflowerblue;
-    font-size:40px
-    
+    background-color: cornflowerblue;
+    font-size: 40px
 }
 
 a .home {
-    display:block;
-    
-    
+    display: block;
+
+
 }
 
 .center {
@@ -56,24 +85,21 @@ a .home {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-  }
-
-img {
-    margin-left: 50px;
-    padding:15px;
 }
+
+
 ul {
     font-family: 'Courier New', Courier, monospace;
 }
 
 ul.nav {
-    list-style-type:none;
-    margin:0;
-    padding:0;
-    background-color:cornflowerblue;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: cornflowerblue;
     overflow: hidden;
     font-size: 40px;
-    
+
 }
 
 li.nav {
@@ -82,24 +108,29 @@ li.nav {
     border-right: 2px solid white;
 }
 
+.nav a:hover {
+    color: black;
+    font-size: 45px;
+}
+
 li a {
-    display:block;
-    color:white;
-    text-align:center;
-    text-decoration:none;
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
     padding: 15px;
 
 }
 
 li:last-child {
-    border-right:none;
+    border-right: none;
 }
 
 .border {
     background-color: white;
-    padding:30px;
-    margin-left:15px;
-    border-radius:25px;
+    padding: 30px;
+    margin-left: 15px;
+    border-radius: 25px;
 }
 
 button {
@@ -114,7 +145,7 @@ button {
     margin: 4px 2px;
     transition-duration: 0.4s;
     cursor: pointer;
-  }
+}
 
 button:hover {
     background-color: #4CAF50;
@@ -123,7 +154,7 @@ button:hover {
 
 hr {
     border-radius: 15px;
-    border:2px solid black;
+    border: 2px solid black;
 }
 
 .sidenav {
@@ -133,10 +164,23 @@ hr {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: mediumslateblue; /* Black */
+    background-color: mediumslateblue;
+    /* Black */
     overflow-x: hidden;
     padding-top: 20px;
     border-radius: 25px;
+    animation-name: slideUp;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(1000px);
+    }
+    to {
+        transform: translatey(0);
+    }
 }
 
 .sidenav a {
@@ -152,18 +196,56 @@ hr {
 }
 
 .ig {
-    font-family:'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
     margin-left: 50px;
     padding: 20px;
 }
 
 
-img.doge {
+.doge {
     width: 500;
+    transition-property: transform;
+    transition-duration: 3s;
+    transition-timing-function: ease-in-out;
+    transition-delay: .25;
+
 }
 
-img.doge:hover {
-    animation-name: n;
-    animation-duration: 2s
-    
+.doge:hover {
+
+    transform: scaleX(125%);
+
+}
+
+.doge:click {
+    transform: translate(1000px);
+}
+
+@media only screen and (max-width:600px) {
+    h1 {
+        transform: scale(70%);
+    }
+    .sidenav {
+        transform: scale(70%);
+    }
+}
+
+table {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+td {
+    font-family: 'Courier New', Courier, monospace;
+    text-wrap: wrap;
+    font-style: italic;
+    border:1px none;
+    font-size: 18px;
+
+}
+
+@media screen and (max-width:600px) {
+    table {
+        flex-direction: column;
+    }
 }
