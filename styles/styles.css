@@ -103,7 +103,7 @@ ul.nav {
 }
 
 li.nav {
-    margin-left: none;
+
     float: left;
     border-right: 2px solid white;
 }
@@ -203,23 +203,19 @@ hr {
 
 
 .doge {
-    width: 500;
     transition-property: transform;
     transition-duration: 3s;
     transition-timing-function: ease-in-out;
-    transition-delay: .25;
+    transition-delay: 0.25;
 
 }
 
 .doge:hover {
 
-    transform: scaleX(125%);
+    transform: scaleX(120%);
 
 }
 
-.doge:click {
-    transform: translate(1000px);
-}
 
 @media only screen and (max-width:600px) {
     h1 {
@@ -237,7 +233,7 @@ table {
 
 td {
     font-family: 'Courier New', Courier, monospace;
-    text-wrap: wrap;
+
     font-style: italic;
     border:1px none;
     font-size: 18px;
