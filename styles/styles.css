@@ -206,23 +206,23 @@ hr {
     transition-property: transform;
     transition-duration: 3s;
     transition-timing-function: ease-in-out;
-    transition-delay: 0.25;
+    transition-delay: 0.25s;
 
 }
 
 .doge:hover {
 
-    transform: scaleX(120%);
+    transform: scaleX(1.25);
 
 }
 
 
 @media only screen and (max-width:600px) {
     h1 {
-        transform: scale(70%);
+        transform: scale(0.7);
     }
     .sidenav {
-        transform: scale(70%);
+        transform: scale(0.7;
     }
 }
 
